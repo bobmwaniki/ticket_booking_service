@@ -43,7 +43,7 @@ def generate_ticket(event_ID, email_address='NULL'):
 			print ("Ticket Status:\t\tInvalid")
 		else:
 			print ("Ticket Status:\t\t" + ticket_data [3])
-		print ("Time of creation:\t\t" + datetime.datetime.fromtimestamp(ticket_data [4]).strftime('%d-%m-%Y %H:%M'))
+		print ("Time of creation:\t" + datetime.datetime.fromtimestamp(ticket_data [4]).strftime('%d-%m-%Y %H:%M'))
 
 		# Emailling if there is a valid email provided 
 		if email_address != 'NULL':
